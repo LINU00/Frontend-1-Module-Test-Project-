@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Museo Sans</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-title">Museo Sans</div>
+    <button class="hamburger" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-left">
+   
+      <li><a href="#">Collections</a></li>
+      <li><a href="#">Our mission</a></li>
+      <li><a href="#">Events</a></li>
+    </ul>
+    <ul class="nav-right">
+      <li><a href="#">Contact us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="main-container">
+    <!-- Left Column - Birmingham Museum -->
+    <div class="left-column">
+      <div class="card birmingham">
+        <span class="tag">CONGREVE STREET</span>
+        <h2>Birmingham <span>Museums.</span></h2>
+        <img src="images/museum.png" alt="Birmingham Museums"/>
+        <hr class="birmingham-divider">
+        <a href="#" class="cta">
+          <span>GET STARTED</span>
+          <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="right-column">
+      <!-- Top Card -->
+      <div class="top-card">
+        <div class="card bread">
+          <span class="tag">EUROPEANA</span>
+          <div class="content-wrapper">
+            <div class="left-content">
+              <h2>A Woman Slicing <span>Bread.</span></h2>
+              <img src="images/bread.png" alt="Woman Slicing Bread"/>
+              <p>DATE: 1800. INSTITUTION: RIJKSMUSEUM. PROVIDER: RIJKSMUSEUM. PROVIDING COUNTRY: NETHERLANDS. PUBLIC DOMAIN. PHOTO BY EUROPEANA.</p>
+            </div>
+          </div>
+          <hr class="bread-divider">
+          <a href="#" class="cta">
+            <span>GET STARTED</span>
+            <span class="arrow">→</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Bottom Cards -->
+      <div class="bottom-cards">
+        <!-- Portrait Card -->
+        <div class="card portrait">
+          <img src="images/portrait.png" alt="Portrait"/>
+          <div class="portrait-dots">
+            <h2>Portrait</h2>
+          <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+          </div>
+          
+          <p>PORTRAIT OF MARITGE CLAESDR VOOGHT. DATE: 1639. INSTITUTION: RIJKSMUSEUM. PROVIDER: RIJKSMUSEUM. PROVIDING COUNTRY: NETHERLANDS. PUBLIC DOMAIN</p>
+           <hr class="bread-divider">
+          <a href="#" class="cta">
+            <span>GET STARTED</span>
+            <span class="arrow">→</span>
+          </a>
+        </div>
+
+        <!-- Vintage Painting Card -->
+        <div class="card vintage">
+          <span class="tag">EUROPEANA</span>
+          <div class="profile">
+            <img src="images/vintage.png" class="profile-img" alt="Profile"/>
+          </div>
+          
+          <h2>Vintage <span>Painting.</span></h2>
+          <p>PORTRAIT OF A MAN. DATE: 1648. INSTITUTION: RIJKSMUSEUM. PROVIDER: RIJKSMUSEUM. PROVIDING COUNTRY: NETHERLANDS. PUBLIC DOMAIN</p>
+          <div class="info">
+            <span>PUBLIC DOMAIN</span>
+            <span>NETHERLANDS</span>
+          </div>
+          <hr class="vintage-divider">
+          <a href="#" class="cta">
+            <span>GET STARTED</span>
+            <span class="arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  const hamburger = document.querySelector('.hamburger');
+  const navLeft = document.querySelector('.nav-left');
+  const navRight = document.querySelector('.nav-right');
+
+  hamburger.addEventListener('click', () => {
+    navLeft.classList.toggle('show');
+    navRight.classList.toggle('show');
+  });
+</script>
+</body>
+</html>
